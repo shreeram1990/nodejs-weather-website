@@ -12,7 +12,7 @@ const foreCast = (latitude, longitude, unit = "", callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}, It is currently ${body.current.temperature} degrees out. it feels like ${body.current.feelslike} degrees out`
+        `${body.current.weather_descriptions[0]}, It is currently ${body.current.temperature} degrees out. it feels like ${body.current.feelslike} degrees out. Humidity: ${body.current.humidity}, Wind Speed: ${body.current.wind_speed}`
       );
     }
   });
